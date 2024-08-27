@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+
+    <!-- Página de Inicio -->
+    <div id="welcomeScreen" class="welcome-screen">
+        <h1>Encripta tu texto aquí</h1>
+        <button id="startBtn" class="start-btn">
+            <img src="encryption-icon.png" alt="Iniciar Encriptación">
+            Iniciar
+        </button>
+    </div>
+
+    <!-- Página del Encriptador -->
+    <div id="encryptorScreen" class="encryptor-screen hidden">
+        <div class="header">
+            <h1>Encriptador de Texto</h1>
+            <div class="theme-toggle">
+                <button id="darkModeBtn">Modo Oscuro</button>
+            </div>
+            <div class="language-select">
+                <label for="language">Idioma:</label>
+                <select id="language">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="pt">Portugués</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <textarea id="inputText" placeholder="Escribe tu texto aquí..."></textarea>
+            <textarea id="outputText" placeholder="Texto encriptado" readonly></textarea>
+        </div>
+        <button id="encryptBtn">Encriptar</button>
+        <button id="decryptBtn">Desencriptar</button>
+        <button id="resetBtn">Reiniciar</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
